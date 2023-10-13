@@ -1,7 +1,9 @@
 import streamlit as stl
 import requests
 from datetime import datetime
+import pytz 
 
+ist = pytz.timezone('Asia/Kolkata')
 
 stl.set_page_config(page_title="COB_WEATHER_APP ",page_icon='⚡',menu_items={       
         'About': " Hello User, This is Ronak . This is internship project assigned by :blue[#CodesOnBytes]! Github: https://github.com/Ronak-Ronu LinkedIn: www.linkedin.com/in/ronak-suthar-2532a4202 "})
@@ -13,7 +15,7 @@ stl.title('COB :blue[WEATHER] APP 🌥')
 col1,col2,col3,col4= stl.columns(4)
 sunr,suns=stl.columns(2)
 wind_col,date_col = stl.columns(2)
-current_date= datetime.now()
+current_date= datetime.now(ist)
 def get_weather_data(city_name):
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&lang={language}"
     response = requests.get(url)
