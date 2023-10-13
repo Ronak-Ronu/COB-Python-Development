@@ -77,7 +77,7 @@ if city_name:
         # stl.write(f"wind_speed 🌪 {wind_speed} km/h")
 
 
-stl.header("DEVELOPER SECTION 👨‍💻")
+stl.header(":blue[DEVELOPER] SECTION 👨‍💻")
 stl.write("API 📡")
 code1 = ''' # GET WEATHER DATA BY CITY_NAME
  https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}'''
