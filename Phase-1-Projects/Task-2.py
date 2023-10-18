@@ -90,3 +90,7 @@ stl.code(code2,language="python")
 stl.write(":blue[GET/]")
 stl.json(json_data)
 
+#WANT CHECK YOUR LOCATION WEATHER? CHECK THE BELOW LIVE APP LINK
+#  [    https://cob-weather-app-ronak.streamlit.app/          ]
+
+
